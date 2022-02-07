@@ -19,7 +19,7 @@ FUENTES:
 
 body{
   font-size: 16px;
-  font-family: @fuente-principal;
+  font-family: 'Playfair Display', serif;
   color: #303133;
 }
 
