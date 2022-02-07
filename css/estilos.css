@@ -47,4 +47,22 @@ header .menu-bar-pc{
   padding: 0 2.25rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5.875rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+header .menu-bar-pc .logo {
+  max-width: 3.125rem
+}
+
+header .menu-bar-pc .menu-principal a {
+  padding: 0 0.625rem;
+  text-decoration: none;
+  color: #b4975a;
+}
+
+header .menu-bar-pc .top-redes a {
+  padding: 0 0.5625rem
 }
