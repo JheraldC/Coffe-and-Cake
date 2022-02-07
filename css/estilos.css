@@ -25,5 +25,11 @@ body{
 
 .container{
   width: 90%;
-  max-width: 500px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+img{
+  vertical-align: top;
+  max-width: 100%;
 }
