@@ -20,5 +20,10 @@ FUENTES:
 body{
   font-size: 16px;
   font-family: @fuente-principal;
-  color: gold;
+  color: #303133;
+}
+
+.container{
+  width: 90%;
+  max-width: 500px;
 }
