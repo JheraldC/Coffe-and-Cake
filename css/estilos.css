@@ -1,0 +1,24 @@
+/*
+COLORES:
+@negro-custom: #141618;
+@blanco: #fff;
+@texto-oscuro: #303133;
+@texto-claro: #777;
+@dorado: #b4975a;
+@gris-claro: #eaeaea;
+
+FUENTES:
+@fuente-principal: 'Playfair Display', serif;
+@fuente-principal: 'Poppins', serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 16px;
+  font-family: @fuente-principal;
+  color: gold;
+}
