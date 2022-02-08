@@ -39,11 +39,11 @@ img{
 a{
   text-decoration: none;
   color: #303133;
-  transition: all 3s ease;
+  transition: all 2s ease;
 }
 
 a:hover{
-  color: #b4975a;
+  color: rgba(0, 0, 0, 0.35);
 }
 
 /* ENCABEZADO */
@@ -73,4 +73,25 @@ header .menu-bar-pc .menu-principal a {
 
 header .menu-bar-pc .top-redes a {
   padding: 0 0.5625rem
+}
+
+/* MAIN */
+
+.main{
+  margin-top: 5.875rem;
+}
+
+.main .portada{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main .portada .col{
+  width: 50%;
+  color: #141618;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
