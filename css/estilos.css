@@ -125,8 +125,12 @@ header .menu-bar-pc .top-redes a {
   opacity: 1;
 }
 
-main .portada .col .foto .overlay i{
+.main .portada .col .foto .overlay i{
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.66rem;
 }
 
 .main .portada .col .texto{
@@ -153,6 +157,28 @@ main .portada .col .foto .overlay i{
   background-position: center;
 }
 
+.main .portada .col .foto-full .overlay{
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  position: relative;
+  cursor: pointer;
+  transition: all 3s ease;
+}
+
+.main .portada .col .foto-full .overlay:hover{
+  opacity: 1;
+}
+
+.main .portada .col .foto-full .overlay i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.66rem;
+}
+
 .main .portada .col .foto-full.izq{
   background-image: url('../img/portada-2.jpg');
   opacity: 0.8;
@@ -160,4 +186,26 @@ main .portada .col .foto .overlay i{
 
 .main .portada .col .foto-full.der{
   background-image: url('../img/portada-3.jpg');
+}
+
+/* NOSTROS */
+
+.nosotros{
+  padding: 5.6rem 0;
+}
+
+.nosotros .container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.nosotros .container .col.izq{
+  width: 30%;
+  border: 1px solid #eaeaea;
+}
+
+.nosotros .container .col.der{
+  width: 70%;
+  border: 1px solid #eaeaea;
 }
