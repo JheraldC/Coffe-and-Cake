@@ -61,6 +61,7 @@ header .menu-bar-pc{
   align-items: center;
   min-height: 5.875rem;
   border-bottom: 1px solid #eaeaea;
+  display: none;
 }
 
 header .menu-bar-pc .logo {
@@ -73,6 +74,25 @@ header .menu-bar-pc .menu-principal a {
 
 header .menu-bar-pc .top-redes a {
   padding: 0 0.5625rem
+}
+
+header .menu-bar-movil{
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  padding: 0 2.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5.875rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+header .menu-bar-movil .logo {
+  max-width: 3.125rem
 }
 
 /* MAIN */
