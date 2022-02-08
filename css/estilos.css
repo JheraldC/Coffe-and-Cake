@@ -359,7 +359,33 @@ header .menu-bar-pc .top-redes a {
 .main .menu-platos .container .contenedor-menu .contenido .item{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     padding: 2.25rem 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.main .menu-platos .container .contenedor-menu .contenido .item .col.izq{
+    width: 70%;
+}
+
+.main .menu-platos .container .contenedor-menu .contenido .item .col.izq h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.625rem;
+}
+
+.main .menu-platos .container .contenedor-menu .contenido .item .col.izq p{
+    font-size: 1rem;
+    color: #777;
+}
+
+.main .menu-platos .container .contenedor-menu .contenido .item .col.der{
+    width: 30%;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.main .contacto .datos{
+  
 }
