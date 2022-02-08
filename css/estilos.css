@@ -203,6 +203,7 @@ header .menu-bar-pc .top-redes a {
 .main .nosotros .container .col.izq{
   width: 30%;
   border: 1px solid #eaeaea;
+  border-left: none;
   display: flex;
   align-items: center;
   padding-right: 5%;
@@ -213,6 +214,7 @@ header .menu-bar-pc .top-redes a {
   width: 70%;
   border: 1px solid #eaeaea;
   padding-left: 5%;
+  border-right: none;
 }
 
 .main .nosotros .container .col.der .texto{
@@ -370,7 +372,7 @@ header .menu-bar-pc .top-redes a {
 }
 
 .main .menu-platos .container .contenedor-menu .contenido .item .col.izq{
-    width: 70%;
+    width: 72%;
 }
 
 .main .menu-platos .container .contenedor-menu .contenido .item .col.izq h3{
@@ -572,18 +574,70 @@ footer .bottom-redes a:hover{
   }
 }
 @media all and (max-width: 980px){
-  .main .nosotros .container.izq{
+  .main .nosotros .container .col.izq{
     width: 100%;
-    border-right: none;
+    border: none;
     border-bottom: 1px solid #777;
     text-align: center;
     display: block;
     padding: 0;
     margin-bottom: 2.25rem;
   }
-  .main .nosotros .container.der{
+  .main .nosotros .container .col.der{
     width: 100%;
     text-align: justify;
     padding-left: 0;
+  }
+  .main .contacto .datos .container .blurb{
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0 auto;
+    margin-bottom: 2.25rem;
+  }
+  .main .contacto .datos .container .blurb:last-child{
+    margin-bottom: none;
+  }
+}
+
+@media all and (max-width: 800px){
+  .main .portada .col{
+    width: 100%;
+  }
+  .main .portada .col .foto-full.izq{
+    display: none;
+  }
+  .main .portada .col .texto h2{
+    text-align: center;
+  }
+  .main .portada .col .texto p{
+    text-align: justify;
+  }
+  .main .chef .container .col{
+    width: 100%;
+  }
+  .main .chef .container .col .titulo-seccion{
+    padding-left: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 480px){
+  .titulo-seccion h2{
+    font-size: 2rem;
+  }
+  .main .nosotros .container .col.der .texto p{
+    font-size: 1rem;
+  }
+  .main .chef .container .col .titulo-seccion p{
+    font-size: 1rem;
+  }
+  .main .menu-platos .container .contenedor-menu .contenido .item .col.izq{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .main .menu-platos .container .contenedor-menu .contenido .item .col.der{
+    width: 100%;
   }
 }
