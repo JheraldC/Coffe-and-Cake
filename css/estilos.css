@@ -36,6 +36,16 @@ img{
   max-width: 100%;
 }
 
+a{
+  text-decoration: none;
+  color: #303133;
+  transition: all 3s ease;
+}
+
+a:hover{
+  color: #b4975a;
+}
+
 /* ENCABEZADO */
 
 header .menu-bar-pc{
@@ -59,8 +69,6 @@ header .menu-bar-pc .logo {
 
 header .menu-bar-pc .menu-principal a {
   padding: 0 0.625rem;
-  text-decoration: none;
-  color: #b4975a;
 }
 
 header .menu-bar-pc .top-redes a {
