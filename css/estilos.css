@@ -262,9 +262,41 @@ header .menu-bar-pc .top-redes a {
 
 .chef .container .col .titulo-seccion p{
   color: rgba(255, 255, 255, 0.77);
+  padding-bottom: 1.125rem;
+  font: 1.125rem;
+  line-height: 1.75;
+}
+
+.chef .container .col .titulo-seccion p:last-child{
+  padding-bottom: 0;
+}
+
+.chef .container .col .slider{
+  width: 300%;
+  display: flex;
+}
+
+.chef .container .col .slider .slide{
+  width: 100%;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.chef .container .col .slider .slide.foto1{
+  background-image: url('../img/chef-1.jpg');
+}
+
+.chef .container .col .slider .slide.foto2{
+  background-image: url('../img/chef-2.jpg');
+}
+
+.chef .container .col .slider .slide.foto3{
+  background-image: url('../img/chef-3.jpg');
 }
 
 .chef .container .col.izq{
+  overflow: hidden;
   height: 100%;
   box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.5);
 }
