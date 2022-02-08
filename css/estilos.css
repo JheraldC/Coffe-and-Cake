@@ -518,5 +518,10 @@ header .menu-bar-pc .top-redes a {
   margin-top: 3.125rem;
   padding: 0.9rem;
   width: 20%;
-  
+  outline: none;
+  transition: all .3s ease;
+}
+
+.main .contacto .formulario .formulario_contacto input[type="submit"]:hover{
+  background-color: rgb(125, 135, 39);
 }
