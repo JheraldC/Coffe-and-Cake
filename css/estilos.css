@@ -190,17 +190,17 @@ header .menu-bar-pc .top-redes a {
 
 /* NOSTROS */
 
-.nosotros{
+.main .nosotros{
   padding: 5.6rem 0;
 }
 
-.nosotros .container{
+.main .nosotros .container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.nosotros .container .col.izq{
+.main .nosotros .container .col.izq{
   width: 30%;
   border: 1px solid #eaeaea;
   display: flex;
@@ -209,13 +209,13 @@ header .menu-bar-pc .top-redes a {
 
 }
 
-.nosotros .container .col.der{
+.main .nosotros .container .col.der{
   width: 70%;
   border: 1px solid #eaeaea;
   padding-left: 5%;
 }
 
-.nosotros .container .col.der .texto{
+.main .nosotros .container .col.der .texto{
   font-size: 1.2rem;
   line-height: 1.75;
   color: #777;
@@ -235,68 +235,88 @@ header .menu-bar-pc .top-redes a {
   color: #777;
 }
 
-.chef{
+.main .chef{
   background-color: rgb(36, 36, 36);
   padding: 5.52rem 0;
 }
 
-.chef .container{
+.main .chef .container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.chef .container .col{
+.main .chef .container .col{
   width: 50%;
 }
 
-.chef .container .col .titulo-seccion{
+.main .chef .container .col .titulo-seccion{
   padding: 3.125rem;
   padding-right: 0;
 }
 
-.chef .container .col .titulo-seccion h2{
+.main .chef .container .col .titulo-seccion h2{
   color: antiquewhite;
 }
 
-.chef .container .col .titulo-seccion p{
+.main .chef .container .col .titulo-seccion p{
   color: rgba(255, 255, 255, 0.77);
   padding-bottom: 1.125rem;
   font: 1.125rem;
   line-height: 1.75;
 }
 
-.chef .container .col .titulo-seccion p:last-child{
+.main .chef .container .col .titulo-seccion p:last-child{
   padding-bottom: 0;
 }
 
-.chef .container .col .slider{
+.main .chef .container .col .slider{
   width: 300%;
   display: flex;
 }
 
-.chef .container .col .slider .slide{
+.main .chef .container .col .slider .slide{
   width: 100%;
   min-height: 400px;
   background-size: cover;
   background-position: center;
 }
 
-.chef .container .col .slider .slide.foto1{
+.main .chef .container .col .slider .slide.foto1{
   background-image: url('../img/chef-1.jpg');
 }
 
-.chef .container .col .slider .slide.foto2{
+.main .chef .container .col .slider .slide.foto2{
   background-image: url('../img/chef-2.jpg');
 }
 
-.chef .container .col .slider .slide.foto3{
+.main .chef .container .col .slider .slide.foto3{
   background-image: url('../img/chef-3.jpg');
 }
 
-.chef .container .col.izq{
+.main .chef .container .col.izq{
   overflow: hidden;
   height: 100%;
   box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.5);
+}
+
+/* NUESTRO MENU */
+
+.main .menu-platos .container .titulo-seccion h2{
+  text-align: center;
+}
+
+.main .menu-platos .container .contenedor-menu{
+  margin-top: 2.5rem;
+}
+
+.main .menu-platos .container .contenedor-menu .encabezado{
+  font-weight: 600;
+  font-family: 'Poppins', serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
