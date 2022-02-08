@@ -61,7 +61,6 @@ header .menu-bar-pc{
   align-items: center;
   min-height: 5.875rem;
   border-bottom: 1px solid #eaeaea;
-  display: none;
 }
 
 header .menu-bar-pc .logo {
@@ -83,7 +82,7 @@ header .menu-bar-movil{
   z-index: 99;
   top: 0;
   padding: 0 2.25rem;
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -93,6 +92,40 @@ header .menu-bar-movil{
 
 header .menu-bar-movil .logo {
   max-width: 3.125rem
+}
+
+header .menu-bar-movil .burger-menu{
+  cursor: pointer;
+  font-size: 2.25rem;
+}
+
+header .menu-bar-movil .slideMenu{
+  position: fixed;
+  top: 5.875rem;
+  right: -80%;
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 1.25rem 2.25rem;
+  width: 80%;
+  transition: all .3s ease;
+}
+
+header .menu-bar-movil .slideMenu.active{
+  right: 0;
+}
+
+header .menu-bar-movil .slideMenu .top-redes{
+  margin-bottom: 0.625rem;
+}
+
+header .menu-bar-movil .slideMenu .top-redes a{
+  padding: 0 0.5625rem
+}
+
+header .menu-bar-movil .slideMenu .menu-principal a{
+  display: block;
+  padding: 0.625rem;
+  border-top: 1px solid #777;
 }
 
 /* MAIN */
@@ -620,6 +653,12 @@ footer .bottom-redes a:hover{
 }
 
 @media all and (max-width: 800px){
+  header .menu-bar-pc{
+    display: none;
+  }
+  header .menu-bar-movil{
+    display: flex;
+  }
   .main .portada .col{
     width: 100%;
   }
