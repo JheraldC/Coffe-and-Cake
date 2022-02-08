@@ -229,3 +229,42 @@ header .menu-bar-pc .top-redes a {
   font-style: italic;
   letter-spacing: -0.02em;
 }
+
+.titulo-seccion p{
+  font-size: 1.25rem;
+  color: #777;
+}
+
+.chef{
+  background-color: rgb(36, 36, 36);
+  padding: 5.52rem 0;
+}
+
+.chef .container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.chef .container .col{
+  width: 50%;
+}
+
+.chef .container .col .titulo-seccion{
+  padding: 3.125rem;
+  padding-right: 0;
+}
+
+.chef .container .col .titulo-seccion h2{
+  color: antiquewhite;
+}
+
+.chef .container .col .titulo-seccion p{
+  color: rgba(255, 255, 255, 0.77);
+}
+
+.chef .container .col.izq{
+  height: 100%;
+  box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.5);
+}
