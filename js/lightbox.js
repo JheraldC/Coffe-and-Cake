@@ -4,7 +4,8 @@ var propLightbox = {
   imageSrc: null,
   cuerpoDom: document.getElementsByTagName('body')[0],
   lightbox_container: null,
-  modal: null
+  modal: null,
+  cerrar_modal: null,
 }
 
 var metLightbox = {
@@ -36,8 +37,14 @@ var metLightbox = {
     propLightbox.modal.appendChild(document.createElement('img')).setAttribute('src', propLightbox.imageSrc);
     propLightbox.modal.getElementsByTagName('img')[0].setAttribute('class', 'img-modal');
 
-    propLightbox.modal.innerHTML += '<i class="fa-solid fa-xmark cerrar_modal"></i>';
+    propLightbox.modal.innerHTML += '<i id="cerrar_modal" class="fa fa-times"></i>';
 
+    propLightbox.cerrar_modal = document.getElementById('cerrar_modal');
+    propLightbox.cerrar_modal.addEventListener('click', metLightbox.cerrarModal);
+  },
+
+  cerrarModal: function(){
+    propLightbox.cuerpoDom.removeChild(propLightbox.lightbox_container);
   }
 }
 
