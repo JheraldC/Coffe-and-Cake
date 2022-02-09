@@ -35,6 +35,9 @@ var metLightbox = {
     propLightbox.modal.style.height = '100%';
     propLightbox.modal.appendChild(document.createElement('img')).setAttribute('src', propLightbox.imageSrc);
     propLightbox.modal.getElementsByTagName('img')[0].setAttribute('class', 'img-modal');
+
+    propLightbox.modal.innerHTML += '<i id="cerrar_modal" class="fa-solid fa-x"></i>';
+
   }
 }
 
