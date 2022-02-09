@@ -1,7 +1,7 @@
 var propLightbox = {
   imgContainer: document.getElementsByClassName('lightbox'),
   image: null,
-  imagensrc: null
+  imageSrc: null
 }
 
 var metLightbox = {
@@ -15,7 +15,9 @@ var metLightbox = {
     metLightbox.lightbox(propLightbox.image);
   },
   lightbox: function(imagen) {
-    propLightbox.imagensrc = window.getComputedStyle(imagen, null).backgroundImage;
-    console.log(propLightbox.imagensrc);
+    propLightbox.imageSrc = window.getComputedStyle(imagen, null).backgroundImage;
+    console.log(propLightbox.imageSrc);
   }
 }
+
+metLightbox.inicio();
