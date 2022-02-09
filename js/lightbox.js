@@ -6,6 +6,7 @@ var propLightbox = {
   lightbox_container: null,
   modal: null,
   cerrar_modal: null,
+  animation: 'fade'
 }
 
 var metLightbox = {
@@ -36,6 +37,13 @@ var metLightbox = {
     propLightbox.modal.style.height = '100%';
     propLightbox.modal.appendChild(document.createElement('img')).setAttribute('src', propLightbox.imageSrc);
     propLightbox.modal.getElementsByTagName('img')[0].setAttribute('class', 'img-modal');
+
+    if (propLightbox.animation == 'fade') {
+      document.getElementsByClassName('img-modal')[0].style.opacity = 0;
+      setTimeout(function(){
+        document.getElementsByClassName('img-modal')[0].style.opacity = 1;
+      },80);
+    }
 
     propLightbox.modal.innerHTML += '<i id="cerrar_modal" class="fa fa-times"></i>';
 
