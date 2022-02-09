@@ -36,7 +36,7 @@ var metLightbox = {
     propLightbox.modal.appendChild(document.createElement('img')).setAttribute('src', propLightbox.imageSrc);
     propLightbox.modal.getElementsByTagName('img')[0].setAttribute('class', 'img-modal');
 
-    propLightbox.modal.innerHTML += '<i id="cerrar_modal" class="fa-solid fa-x"></i>';
+    propLightbox.modal.innerHTML += '<i class="fa-solid fa-xmark cerrar_modal"></i>';
 
   }
 }
