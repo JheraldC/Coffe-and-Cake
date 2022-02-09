@@ -171,7 +171,7 @@ header .menu-bar-movil .slideMenu .menu-principal a{
   background-color: rgba(0, 0, 0, 0.35);
   position: relative;
   cursor: pointer;
-  transition: all 3s ease;
+  transition: all .3s ease;
 }
 
 .main .portada .col .foto .overlay:hover{
@@ -217,7 +217,7 @@ header .menu-bar-movil .slideMenu .menu-principal a{
   background-color: rgba(0, 0, 0, 0.35);
   position: relative;
   cursor: pointer;
-  transition: all 3s ease;
+  transition: all .3s ease;
 }
 
 .main .portada .col .foto-full .overlay:hover{
