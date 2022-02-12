@@ -2,7 +2,8 @@
 var propFormulario = {
   formulario: document.getElementsByName('formulario_contacto')[0],
   elementos: document.getElementsByName('formulario_contacto')[0].elements,
-
+  error: null,
+  textoError: null,
 }
 
 var metFormulario = {
@@ -27,7 +28,9 @@ var metFormulario = {
     for (var i = 0; i < propFormulario.elementos.length; i++) {
       if (propFormulario.elementos[i].value == '') {
         event.preventDefault();
-        propFormulario.elementos[i].style
+        propFormulario.error = document.createElement('p');
+        propFormulario.textoError = document.createTextNode('Por favor, llena el campo con tu '+propFormulario.elementos[i].nodeName);
+        propFormulario.error.appendChild(propFormulario.textoError);
       } else {
 
       }
