@@ -1,14 +1,14 @@
-
 var propScroll = {
   posicion: window.pageYOffset,
   scroll_suave: document.getElementsByClassName('scroll-suave'),
   volver_arriba: document.getElementsByClassName('volver-arriba'),
   destino: null,
-  seccion_distancia: null
+  seccion_distancia: null,
+  intervalo: null
 }
 
 var metScroll = {
-  Inicio: function(){
+  Inicio: function() {
     for (var i = 0; i < propScroll.scroll_suave.length; i++) {
       propScroll.scroll_suave[i].addEventListener('click', metScroll.moverse);
     }
@@ -16,13 +16,20 @@ var metScroll = {
       propScroll.volver_arriba[i].addEventListener('click', metScroll.subir);
     }
   },
-  moverse: function(e){
+  moverse: function(e) {
     e.preventDefault();
     propScroll.destino = this.getAttribute('href');
-    propScroll.seccion_distancia = document.querySelector(propScroll.destino);
-    console.log(propScroll.seccion_distancia);
+    propScroll.seccion_distancia = document.querySelector(propScroll.destino).offsetTop;
+
+    propScroll.posicion = window.pageYOffset;
+    propScroll.intervalo = setInterval(function() {
+      if (propScroll.posicion < propScroll.seccion_distancia) {
+        propScroll.posicion += 10;
+      }
+      window.scrollTo(0, propScroll.seccion_distancia);
+    }, 15);
   },
-  subir: function(){
+  subir: function() {
 
   }
 }
