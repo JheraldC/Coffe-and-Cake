@@ -36,13 +36,12 @@ var metFormulario = {
         }
       }
       else{
-        if ((propFormulario.elementos[i].parentElement.childElementCount >= 3) {
+        if (propFormulario.elementos[i].parentElement.childElementCount >= 3) {
           propFormulario.error = propFormulario.elementos[i].parentElement.getElementsByTagName('p')[0];
-          
-        }
+          propFormulario.elementos[i].parentElement.removeChild(propFormulario.error);
       }
     }
   }
+ }
 }
-
 metFormulario.Inicio();
