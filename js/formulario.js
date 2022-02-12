@@ -1,4 +1,3 @@
-
 var propFormulario = {
   formulario: document.getElementsByName('formulario_contacto')[0],
   elementos: document.getElementsByName('formulario_contacto')[0].elements,
@@ -7,7 +6,7 @@ var propFormulario = {
 }
 
 var metFormulario = {
-  Inicio: function(){
+  Inicio: function() {
     for (var i = 0; i < propFormulario.elementos.length; i++) {
       if (propFormulario.elementos[i].type != 'submit') {
         propFormulario.elementos[i].addEventListener('focus', metFormulario.focusInput);
@@ -16,23 +15,25 @@ var metFormulario = {
     }
     propFormulario.formulario.addEventListener('submit', metFormulario.validarInputs);
   },
-  focusInput: function(){
+  focusInput: function() {
     this.parentElement.children[1].className = 'label active';
   },
-  blurInput: function(){
+  blurInput: function() {
     if (this.value == '') {
       this.parentElement.children[1].className = 'label';
     }
   },
-  validarInputs: function(event){
-    for (var i = 0; i < propFormulario.elementos.length; i++) {
+  validarInputs: function(event) {
+    for (var i = 0; i < propFormulario.elementos.length - 1; i++) {
       if (propFormulario.elementos[i].value == '') {
         event.preventDefault();
-        propFormulario.error = document.createElement('p');
-        propFormulario.textoError = document.createTextNode('Por favor, llena el campo con tu '+propFormulario.elementos[i].nodeName);
-        propFormulario.error.appendChild(propFormulario.textoError);
-      } else {
-
+        if (propFormulario.elementos[i].children.length < 3) {
+          propFormulario.error = document.createElement('p');
+          propFormulario.textoError = document.createTextNode('Por favor, llena el campo con tu ' + propFormulario.elementos[i].name);
+          propFormulario.error.appendChild(propFormulario.textoError);
+          propFormulario.error.className = 'error';
+          propFormulario.elementos[i].parentElement.appendChild(propFormulario.error);
+        }
       }
     }
   }
