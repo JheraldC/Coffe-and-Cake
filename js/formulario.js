@@ -13,12 +13,25 @@ var metFormulario = {
         propFormulario.elementos[i].addEventListener('blur', metFormulario.blurInput);
       }
     }
+    propFormulario.formulario.addEventListener('submit', metFormulario.validarInputs);
   },
   focusInput: function(){
-    this.parentElement.children[1];
+    this.parentElement.children[1].className = 'label active';
   },
   blurInput: function(){
+    if (this.value == '') {
+      this.parentElement.children[1].className = 'label';
+    }
+  },
+  validarInputs: function(event){
+    for (var i = 0; i < propFormulario.elementos.length; i++) {
+      if (propFormulario.elementos[i].value == '') {
+        event.preventDefault();
+        propFormulario.elementos[i].style
+      } else {
 
+      }
+    }
   }
 }
 
