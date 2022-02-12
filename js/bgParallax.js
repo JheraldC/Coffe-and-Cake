@@ -15,7 +15,7 @@ var metParallx = {
 
   scrollParallax: function(){
     propParallx.recorrido = window.pageYOffset;
-    propParallx.limite = offsetTop;
+    propParallx.limite = propParallx.seccion.offsetTop + propParallx.seccion.offsetHeight;
   }
 
 }
