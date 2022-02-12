@@ -15,7 +15,7 @@ var metFormulario = {
     }
   },
   focusInput: function(){
-    
+    this.parentElement.children[1];
   },
   blurInput: function(){
 
