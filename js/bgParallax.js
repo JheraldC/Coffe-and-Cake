@@ -16,6 +16,10 @@ var metParallx = {
   scrollParallax: function(){
     propParallx.recorrido = window.pageYOffset;
     propParallx.limite = propParallx.seccion.offsetTop + propParallx.seccion.offsetHeight;
+
+    if ((propParallx.recorrido > propParallx.seccion.offsetHeight) && (propParallx.recorrido <=  propParallx.limite)) {
+        propParallx.seccion.style.backgroundPositionY = (propParallx.recorrido - propParallx.seccion.offsetTop) / 1.5 + 'px';
+    }
   }
 
 }
