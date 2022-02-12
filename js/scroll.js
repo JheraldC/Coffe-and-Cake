@@ -8,4 +8,19 @@ var propScroll = {
 
 var metScroll = {
 
+  inicio: function(){
+    for (var i = 0; i < propScroll.scroll_suave.length; i++) {
+      propScroll.scroll_suave[i].addEventListener('click', metScroll.moverse);
+    }
+    for (var i = 0; i < propScroll.volver_arriba.length; i++) {
+      propScroll.volver_arriba[i].addEventListener('click', metScroll.subir);
+    }
+  },
+  moverse: function(){
+
+  },
+  subir: function(){
+    
+  }
+
 }
