@@ -51,6 +51,9 @@ var metScroll = {
           clearInterval(propScroll.intervalo);
         }
       }
+      else {
+        return;
+      }
       window.scrollTo(0, propScroll.posicion);
     }, 15);
   }
